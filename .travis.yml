@@ -1,21 +1,22 @@
 language: minimal
-
 services: docker
-
 env:
-  - DOCKER_COMPOSE_VERSION=1.23.2
-
+- DOCKER_COMPOSE_VERSION=1.23.2
 before_install:
-  - docker -v && docker-compose -v
-  - sudo rm /usr/local/bin/docker-compose
-  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
-  - chmod +x docker-compose
-  - sudo mv docker-compose /usr/local/bin
-  - curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
-  - chmod +x ./kubectl
-  - sudo mv ./kubectl /usr/local/bin/kubectl
-
-
-
+- docker -v && docker-compose -v
+- sudo rm /usr/local/bin/docker-compose
+- curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname
+  -s`-`uname -m` > docker-compose
+- chmod +x docker-compose
+- sudo mv docker-compose /usr/local/bin
+- curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+- chmod +x ./kubectl
+- sudo mv ./kubectl /usr/local/bin/kubectl
 install:
-  - docker-compose -f docker/docker-compose-build.yaml build --parallel 
+- docker-compose -f docker/docker-compose-build.yaml build --parallel
+deploy:
+  provider: heroku
+  api_key:
+    secure: 2YNZG1RQWwBOsOIymjM7fLzMKBqRECmN/ebw6zsPNTByRdb8PuMCaGj8yYVOBMZl8hnfwst5FP8yQHkPPeldVUi7iJhcYaYh9KTjWi1Qo+pMvrfg1NbZXivn+x5bxCWcmhywm4CArgyshgiBhc3CLPG2LLbeZE0oS9+4G3cC7t3gRzYOQt565jVZAxrBgsEZsMf4k4QxkLu2MP9WKQZmzxRQ3VP+5wOkf/BlJyZ9e8sKWBd8cNU+ySgHZvyX3iu2wjHA9Guiz5xPmMrdkWZUL5CQYDTgmVHUfAJZukkjfEzjQhkY/nZjqO1BDgqzWtYN0e5fxlMv/AJXg7L3TBI+NmYLMznmVq0Y51at/oLAgMMhsIPQZfunUig9XVgjJW6aZ597mDpP5815aEVZKQZHfnXO6bLRugx+JQL4EL0xEGiczBDH7bdfqRlpvXMznVIkBrnhybW26McQDD1tyErFRji+/ibxMaqUvGn4JeI3U9yZ94vcvm7VqkwD8b8mBDtms/AZx3uAIX8nsLilHjR9BpIOe7KPLwlROEpX0ugO6W4S38FeW3liXG1+d7wtolYFOhKv3Bf79QiDsleolh0WWKF4JAfsQAzDYoMN3sdC8EoUgQQaOjAfP4oLcXlTjA3INThCj0Al8OUrIo+NG/A2hy6qW8s9/MLICDiqREtrh6g=
+  app: udagram-udacity-project
+  
