@@ -39,7 +39,6 @@ import { IndexRouter } from "./controllers/v0/routes";
       "database: " + process.env.POSTGRES_DATABASE + "___" +
       "port: " + process.env.POSTGRES_PORT + "___" +
       "host: " + process.env.POSTGRES_HOST + "___" +
-      "dialect: " + process.env.POSTGRES_DIALECT + "___" +
       "aws_region: " + process.env.AWS_REGION + "___" +
       "aws_profile: " + process.env.AWS_PROFILE + "___" +
       "aws_media_bucket: " + process.env.AWS_MEDIA_BUCKET
