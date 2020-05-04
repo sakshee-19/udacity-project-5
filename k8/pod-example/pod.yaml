@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-example
+spec:
+  containers:
+  - image: sakshee19/reverseproxy:1.0.0
+    name: reverseproxy
+    # imagePullPolicy: Always          
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
+      limits:
+        memory: "1024Mi"
+        cpu: "500m"       
+    ports:
+    - containerPort: 8001
+  # restartPolicy: Always
