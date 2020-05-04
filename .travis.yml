@@ -1,4 +1,5 @@
 language: minimal
+cache: bundler
 services: docker
 env:
 - DOCKER_COMPOSE_VERSION=1.23.2
@@ -19,3 +20,4 @@ deploy:
   api_key:
     secure: t66Vjv/AtBwT7b9XAtc1MBxVN17XoDNu6j5ia0fGvOq9N5ePy+2RTGKiijo2aILKL1PHY0RXMJJCimGiz21ND5J0YWQlapklVRQYQx7m2l9Ix/Wep5mWVxGHSgikyqPnPEyZZTLuriKavtlAxTRhHL8B25xHmre0dh974poqgZXQrebA5OjDtJyTt5qZTjFnyyfR66ADTQ2uIqJ/TwxsIYGsPD54eEn53xWqPBnxwhI0g6U9s2qFcYbZb7OhSxxVt8tp3owL2P+NHDI3FhsMMJ2r/hnquPqssp3rUYULwLryjx7rfZjMsRKzifmucrr/5o0rdvUagbp59p96Y9hiTm+wWVOG9NGigmbOaEdP5mA0BKOfqQCn44veA84TehonpdRch642vBE3sY1kr0RWOHXUB+XMysMdGsSgeqK/aaJrLusgNEeKZi9ozICDHGBEo676whO6ycYE8NbsiAjEv8yF5ocHQwfTTh2xJZVbNHvEPcfwHMl4F6YGMjKfx1j+goh3LyJjB6NZiMxhcBQ+uVYXytS7KGVHuEdCFjMqmOs3HMe+BhLDlTLjGmgO+jVoJJDDZpRIJnVFE4Z042XdxycH7MQ3vRXOYtKdrtbHvX/gbuG7U688giJJwwqZ6qkXKitU1ic3aRpTafza81AUFwtnlUABgDNpNgnH15QhMlU=
   app: udagram-udacity-project
+  skip_cleanup: true
