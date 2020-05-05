@@ -26,8 +26,7 @@ deploy:
   password:
     secure: C0lM+/ezWZHuwjezCH6ll3W1T27Fuc9XshKI3iJFEMV3Xz0YNwClv7YoahEHNsxzmV2z9WV4kAVIpnZEvIf5imEZSVPQPTNGkN6SyewiRcqvSi310J4IO+vYpKtb+tI+bPlfGD/AqVAEDnd25a8GrAF72FINBmsUWZA36vYk97MTy17yRExzmGpMHqNMX8yDBTmuXr6c5aA1Msn03FKinxU3bAr4bRGvUv50Rh+XoIjUc06/cACuD1c/4k547KpWQho14xWy34rtdmz6/GnbJslU3ta18ssmAHGKGH16wUk430viwTk7SmEuYrtmlfJGkAEqtkV1nlD771xBrpF1TWS+3JLJ6jgUqtHx93q6rqol4dSZM7pht7willVcF8Gcq6A03qKOc456UMBBlkPUpr8n+9F+iIqJjlAn36nTac6l7XUtq+fMkS7gNDp2SXln0n0H+j+9DKRqGCbVFDP8tTxItm0sN/WDbR6V5tgtSoIfv/lhcR7hKupxg0qNWT54yI7On6Qhs66JqZKj9ioybaRSZuI2ujyhHBazGpZZPFCxYalZa0NTzqd09yg2nHHGObTkBT6ZLS6aogP+KeZIzHYpnn0GjGkItQs0xS0APNDvjTcY+77vlj7XcvlLaRsm4+65MboaDEUwq1jtstbbuKy4TpU8+9y6o9X2QK5PTCk=
   file_glob: true
-  file: 
-    - docker/*
+  file: docker/*
 
   skip_cleanup: true
   # on:
