@@ -45,5 +45,6 @@ If you get a not found message, install the required item:
 * `docker-compose up`
 
 ### AWS-deployed url
-[server](http://aaba3fe2fc06d4d3ea32dd72e943cfce-1443023894.ap-south-1.elb.amazonaws.com:8001)
-[client](http://a34e2b87c1ce74d11a2f8c816dd38ccc-370286170.ap-south-1.elb.amazonaws.com)
+[feed server](http://a95521bf690cb4ee2a3c5f36137862cb-1637027034.ap-south-1.elb.amazonaws.com:8001/api/v0/feed)
+
+[client](http://a5bef757971b24bdc8e2b5dbd5fd6d92-1553918312.ap-south-1.elb.amazonaws.com)
