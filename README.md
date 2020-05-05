@@ -44,3 +44,6 @@ If you get a not found message, install the required item:
 *  `docker-compose -f docker-compose-build.yaml build --parallel`
 * `docker-compose up`
 
+### AWS-deployed url
+[server](http://aaba3fe2fc06d4d3ea32dd72e943cfce-1443023894.ap-south-1.elb.amazonaws.com:8001)
+[client](http://a34e2b87c1ce74d11a2f8c816dd38ccc-370286170.ap-south-1.elb.amazonaws.com)
