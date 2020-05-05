@@ -1,0 +1,5 @@
+build:
+    docker:
+      web: docker-compose -f docker/docker-compose-build.yaml build --parallel
+  run:
+    web: docker-compose up
