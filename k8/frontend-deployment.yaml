@@ -15,7 +15,7 @@ spec:
       containers:
       - image: sakshee19/udacity-udagram-frontend:1.0.0
         name: frontend
-        # imagePullPolicy: Always          
+        imagePullPolicy: Always          
         ports:
         - containerPort: 80
         resources:

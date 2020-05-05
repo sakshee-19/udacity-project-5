@@ -14,7 +14,7 @@ spec:
       containers:
       - image: sakshee19/udacity-user-service:1.0.0
         name: backend-user 
-        # imagePullPolicy: Always  
+        imagePullPolicy: Always  
         resources:
           requests:
             memory: "64Mi"

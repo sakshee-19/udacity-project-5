@@ -14,7 +14,7 @@ spec:
       containers:
       - image: sakshee19/udacity-feed-service:1.0.0
         name: backend-feed
-        # imagePullPolicy: Always  
+        imagePullPolicy: Always  
         resources:
           requests:
             memory: "64Mi"
